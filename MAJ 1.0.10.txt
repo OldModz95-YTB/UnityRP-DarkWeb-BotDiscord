@@ -1,0 +1,208 @@
+### Mise à jour 1.0.10
+
+Developed By OldModz95#3105
+https://discord.gg/MS6TMgRfqB
+
+
+Reprise de la base du bot: https://shop.protondev.eu/fr/bot-discord/35-autgg-adminuser.html
+
+
+CE BOT A ETAIS FAIT POUR LE SERVEUR FIVEM UNITYRP.
+IL Y A DONC DES CHOSES QUI SONT LIE A CE SERVEUR, COMME LES ROLES ECT...
+IL DEVAIS Y AVOIR PLUS DE CHOSE, MAIS UN REFUS DU FONDATEUR A ETAIS DONNER.
+JAI DONC STOPPER ET JE VOUS LE PARTAGE DONC !!
+
+===
+
+-Fichier des commandes appart supprimer.
+-Commande "infoapp" s'appel maintenant "info"
+Commande "forgot" s'appel maintenant "name"
+-Modification de la commande "role" (les fichiers ce trouve dans le fichier role)
+-La commande "new-hwid" a étais supprimer
+-La commande "set-hwid" a étais supprimer
+-Modification dans la commande "redeem"/"info"/"name"/"role"
+-Ajout des variables
+-Ajout de la traduction via des variables
+
+
+
+
+## Commande name
+
+-Utilisation de l'api fetch, pour vérifier si l'utilisateur existe.
+-Si l'utilisateur existe pas il envoie une réponse.
+-S'il y a une erreur d'information personnel de l'application il répond l'erreur.
+-Si il y a aucune erreur et que l'utilisateur existe cela continu les actions.
+-Si l'action est bonne cela change le mot de passe du compte et cela modifie sont pseudo par le mot de passe du compte.
+
+
+
+**Succes:**
+
+il génére un mot de passe.
+Si ${res.data.username} === ${message.author.id}
+(username = l'id discord)
+
+il utilise l'api changepw
+
+Si ${res.data.info} === "Password has been updated"
+Donc si l'api envoie la réponse comme quoi le mot de passe à bien étais changer
+il envoie un message priver avec le nom d'utilisateur (donc l'id du compte discord) & le nouveau mot de passe.
+
+J'ai ajouté un message d'erreur en cas ou, mais il devrais pas en avoir car les vérifications ont étais faite avant.
+
+
+
+
+
+## Commande role
+
+**Plugin:**
+
+-dotenv par motdotla
+-nuggies par Nuggies-bot
+-discord-buttons par AngeloCore
+
+
+**Start commande:**
+
+Au démarrage du bot, il cherche dans le fichiers "commands" les commandes disponible pour les executés.
+
+
+**Vérifications:**
+
+-Vérification des permissions de l'utilisateur qui ajoute la commande.
+-Vérification des permissions du bot.
+-Si le bot n'a pas les permissions, il envoie une erreur.
+-Si l'utilisateur n'a pas les permissions, il envoie une erreur.
+
+
+
+# Commande Role Fichier role.js
+
+Des que vous faite la commande il envoie une réponse.
+Vous devez envoyer les informations suivante:
+
+-ID du role
+-Couleur pour le bouton (en anglais, red/green ect...)
+-label (Text qui s'affiche sur la label)
+-Emoji (Cela peux etre un emoji personnaliser, mais il faut que le bot sois sur le serveur ou ce trouve l'emoji)
+
+Après avoir envoyer le message, le bot répondra avec une réaction de l'emoji que vous aurez ajouter.
+Faite la commande `done` pour confirmer.
+
+
+Le bot va vérifier que toute les informations fourni sont valide.
+
+Que cela sois le role, les couleurs, l'émoji
+Les couleurs disponible sont `grey/gray/red/blurple/green`
+
+Si tout est bon, le bot affichera un embed avec votre bouton.
+
+Vous pouvez modifier le texte qui s'affiche dans le dossier **commands** puis dans le fichier **role.js** à la ligne **46** pour le tire & **47** pour la description.
+Pour modifier le texte qui s'affiche après avoir fait la commande, aller à la ligne **12**
+
+
+**Action lors du clic sur le bouton:**
+
+L'action ce passe dans le fichier `node_modules\nuggies\src\classes/buttonroles.js`.
+
+-Une liste de vérification en cas ou que le channel/role sois supprimer.
+
+
+**Si aucune erreur, cela fait les actions suivante:**
+
+-Utilisation de l'api, type fetch.
+-Vérification des erreurs:
+-Si l'utilisateur existe pas.
+-Si l'api de l'application est pas bonne.
+
+
+**Si la réponse est Succes:**
+
+-Ont vérifie que l'username = id discord de l'utilisateur (en cas ou)
+-Si l'utilisateur n'a pas le role, cela lui ajoute le role selon le rank du compte.
+-Si l'utilisateur à deja le role, cela répond qu'il l'a deja.
+
+-Si l'utilisateur ajoute une license et qu'il a le rank 1 puis ajoute une nouvelle license rank 2 sans avoir pris sont role rank 1 il devra ravoir une license rank 1 pour prendre sont role.
+-Les personnes aillant le role "." donc admin par défaut, auront pas besoin des roles suivants, dans la logique de vos permissions.
+-Si l'utilisateur n'a aucun compte cela lui mettra aucun role et répondra par un message.
+-Si l'utilisateur a un rank inconnu, cela lui dira et lui ajoutera aucun role.
+
+-Des que les commandes est faite et que l'utilisateur a un rank ou un role lui sera ajouter, cela lui ajoute automatiquement un le role priver.
+
+## Commande redeem
+
+Modification de la commande **redeem**
+
+Suppressions de l'ajout du role lors de l'enregistrement d'un utilisateur.
+Ce system a étais ajouter à la commande **role**.
+Ajout d'une réponse lorsque l'utilisateur ne fourni aucune clé. **Exemple:** `+redeem`.
+
+-Si l'utilisateur est pas inscrit, cela le fait au moment ou il fait la commande avec une bonne license.
+-Si l'utilisateur est deja inscrit, cela change sont mot de passe ainsi que sont rank de compte.
+
+
+
+## Variables
+
+Ajout du system de variables.
+
+Dans le fichier variable vous ajouterez vos information.
+Cela évite de les modifiers dans tout les fichiers.
+
+-Token du bot.
+-Prefix.
+-Nombre de caractere pour le mot de passe (nbr1).
+-Discord du fondateur du bot.
+-ID Discord du fondateur du bot.
+-AID de votre compte Auth.gg.
+-Secret de votre application Auth.gg.
+-API KEY de votre compte Auth.gg.
+-API de votre application Auth.gg.
+-ID de votre role premium.
+-Role Admin: nom du role Admin.
+-Role Premium: nom du role premium.
+-Role User: nom du role utilisateur (membre).
+-AdminAccesAllInfos: Si les utilisateurs qui ont le role admin ont besoin des autres role (pour la commande role).
+-channelredeem: ID Du channel pour la commande redeem.
+
+# Dans le fichier role.json
+
+    admin: role admin
+    priver: role utilisateur priver
+    Random: role membre
+
+    Blanchisseur: role pour le channel Blanchisseur
+
+    IDBlanchisseur: ID role pour le channel Blanchisseur
+
+    IDAllWeed: ID role pour tout les channel Weed
+    IDWeed1: ID role pour le channel Weed 1
+    IDWeed2: ID role pour le channel Weed 2
+    IDWeed3: ID role pour le channel Weed 3
+
+    IDAllOpiume: ID role pour tout les channel Opiume
+    IDOpiume1: ID role pour le channel Opiume 1
+    IDOpiume2: ID role pour le channel Opiume 2
+    IDOpiume3: ID role pour le channel Opiume 3
+
+    IDAllEcstasy: ID role pour tout les channel Ecstasy
+    IDEcstasy1: ID role pour le channel Ecstasy 1
+    IDEcstasy2: ID role pour le channel Ecstasy 2
+    IDEcstasy3: ID role pour le channel Ecstasy 3
+
+    IDAdmin: ID Role admin
+    IDPriver: ID Role Priver
+
+
+
+    ===========
+    //Developed By OldModz95#3105
+// https://discord.gg/MS6TMgRfqB
+
+
+CE BOT A ETAIS FAIT POUR LE SERVEUR FIVEM UNITYRP.
+IL Y A DONC DES CHOSES QUI SONT LIE A CE SERVEUR, COMME LES ROLES ECT...
+IL DEVAIS Y AVOIR PLUS DE CHOSE, MAIS UN REFUS DU FONDATEUR A ETAIS DONNER.
+JAI DONC STOPPER ET JE VOUS LE PARTAGE DONC !!

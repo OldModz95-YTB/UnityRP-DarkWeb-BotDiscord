@@ -1,0 +1,38 @@
+-Crée un compte sur le site auth.gg
+-Crée une application.
+-Aller dans le dossier variable puis variable.json.
+
+token = token de votre vot discord
+prefix = ce que vous voulez, c'est ce que l'on va mettre avant le nom de la commande.
+nbr1 = nombre de caractere pour votre mot de passe.
+OWNER = discord du fondateur.
+IDOWNER = ID Discord du fondateur.
+aid = AID de votre compte auth.gg, vous le trouverez en cliquant en haut à droite du site, puis settings.
+secret = Secret de votre application auth.gg, aller dans le dashboard du site auth.gg.
+apikey = API Key de votre compte auth.gg, pareil que l'aid
+API = API de votre application, depuis le dashboard aller sur panel, puis settings puis encore settings.
+IDPREMIUM = AID du role premium.
+RoleAdmin = Nom du role admin.
+RolePremium = nom du role premium.
+RoleUser = Nom du role membre.
+channelredeem = ID Du channel pour la commande redeem.
+
+
+-Dans le fichier role.json ajouter les nom des roles pour les roles suivant:
+
+admin = Role admin.
+priver = Role pour les utilisateurs aillant un compte.
+Random = Role membre.
+
+
+-Pour tout les autres ce sont les ID.
+-Dans le fichier emoji.json changer l'id de l'emoji Yes et No par vos emoji.
+
+
+
+
+
+CE BOT A ETAIS FAIT POUR LE SERVEUR FIVEM UNITYRP.
+IL Y A DONC DES CHOSES QUI SONT LIE A CE SERVEUR, COMME LES ROLES ECT...
+IL DEVAIS Y AVOIR PLUS DE CHOSE, MAIS UN REFUS DU FONDATEUR A ETAIS DONNER.
+JAI DONC STOPPER ET JE VOUS LE PARTAGE DONC !!

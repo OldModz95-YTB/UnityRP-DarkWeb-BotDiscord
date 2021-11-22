@@ -1,0 +1,40 @@
+{
+    "activer": "Activer",
+    "desactiver": "Désactiver",
+
+
+    "UpHash": "Hash non modifier",
+    "UpVersion": "Aucun lien disponible",
+
+    "text1": "Information de l'application de protection",
+    "text2": "Status de l'application",
+    "text3": "Développer Mode",
+    "text4": "Hash de l'application",
+    "text5": "Version de l'application",
+    "text6": "Lien de la dernier version",
+    "text7": "Free Mode",
+    "text8": "Connexion",
+    "text9": "Inscription",
+    "text10": "Nombre d'utilisateur",
+    "text11": "Nom de l'application",
+    "text12": "Vous avez les informations",
+    "text13": "Les utilisateurs ont pas les meme informations que vous.",
+    "text14": "API KEY non valide",
+    "text15": "Merci de contacter",
+    "text16": "Message d'erreur",
+    "text17": "Information d'application invalide",
+    "text18": "Secret de l'application invalide",
+    "text19": "Erreur non connu",
+    "text20": "Erreur",
+    "text21": "Vous etes utilisateur",
+    "text22": "Vous etes",
+    "text23": "Vous devez etre utilisateur",
+    "text24": "Oulala ! Tu essaye de faire quoi ici sans role hein ?",
+    "text25": "Vous êtes utilisateur priver",
+    "text26": "Rassurez-vous, la police ne peux pas entrée dans notre system !",
+    "text27": "Admin",
+    "text28": "Prend une license priver ou sinon sort d'ici !!"
+    
+
+
+}

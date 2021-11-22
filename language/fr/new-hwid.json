@@ -1,0 +1,10 @@
+{
+    "nonvalide": "Utilisateur existe pas !",
+    "noexiste": "No user found",
+    "noappli": "No application found",
+    "text1": "nous avons trouvé aucun compte à vous ",
+    "errorapp": "Erreur de l'application",
+    "contact": "Merci de contacter",
+    "good": "HWID reset avec succes.",
+    "errorinco": "Erreur inconnu est survenu."
+}
