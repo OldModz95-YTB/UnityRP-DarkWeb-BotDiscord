@@ -13,8 +13,12 @@ OldModz95
 <br>
 
 ### Bot Discord DarkWeb pour le serveur FiveM UnityRP
-<br>
+<br><br>
 
+## REJOIGNIEZ LE SERVEUR POUR AVOIR LA TEMPLATE POUR LE BOT !!!!!!!!!!!!!!!!!!!!!!!!
+
+https://discord.gg/YndSzGHQae
+<br><br>
 ## Installation
 <br>
 
