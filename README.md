@@ -17,7 +17,7 @@ OldModz95
 
 ## REJOIGNIEZ LE SERVEUR POUR AVOIR LA TEMPLATE POUR LE BOT !!!!!!!!!!!!!!!!!!!!!!!!
 
-https://discord.gg/YndSzGHQae
+https://discord.gg/MS6TMgRfqB
 <br><br>
 ## Installation
 <br>
